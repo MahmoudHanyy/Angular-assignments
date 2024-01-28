@@ -10,7 +10,6 @@ export class RecipesComponent implements OnInit {
   
   @Input() page: string;
   @Input() recipe: Recipe;
-  @Output() loadItemDetail = new EventEmitter<Recipe>();
 
   ngOnInit() {}
 

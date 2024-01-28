@@ -10,10 +10,10 @@ export class RecipeItemComponent implements OnInit {
   
   ngOnInit() {}
   @Input() recipe: Recipe
-  @Output() itemSelected = new EventEmitter<Recipe>()
+  @Output() itemSelectedEvent = new EventEmitter<Recipe>()
   
   onSelectItem() {
-    this.itemSelected.emit(this.recipe)
+    this.itemSelectedEvent.emit(this.recipe)
   }
 
 }
